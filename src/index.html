@@ -30,6 +30,24 @@
                 <label id="female-label" for="female"><input id="female" type="radio" name="gender" /> Female</label>
             </fieldset>
             <fieldset>
+                <label id="career-label" for="career">
+                    How many years of work experience do you have?
+                    <select id="career">
+                        <option value="">Select option</option>
+                        <option value=0>Laws</option>
+                        <option value=1>Engineering</option>
+                        <option value=2>Education</option>
+                        <option value=3>Medicine</option>
+                        <option value=4>Politics</option>
+                        <option value=5>Accounting</option>
+                        <option value=6>Business</option>
+                        <option value=7>Other</option>
+                    </select>
+                </label>
+                <label id="other-career-label" for="other-career">If choose <em>other</em> option, write your carreer:
+                    <input id="other-career" type="text" name="other-career" /></label>
+            </fieldset>
+            <fieldset>
                 <label id="experience-label" for="experience">
                     How many years of work experience do you have?
                     <select id="experience">
@@ -63,8 +81,9 @@
                 </label>
             </fieldset>
             <fieldset>
-                <legend>Write a brief bio...</legend>
-                <textarea rows="8" cols="50" placeholder="I like to do..."></textarea>
+                <label id="bio-label" for="bio">Write a brief bio:
+                    <textarea id="bio" rows="8" cols="50" name="bio" placeholder="I like to do..."></textarea>
+                </label>
             </fieldset>
             <input id="submit" type="submit" value="Submit" />
         </form>
