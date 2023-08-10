@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Register Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <p id="description">Next, please complete information.</p>
     </header>
     <Section>
-        <form id="data-form">
+        <form id="data-form" method="post" action="">
             <fieldset>
                 <label id="fullname-label" for="fullname">FullName: <input id="fullname" type="text" name="fullname"
                         placeholder="Peter Lee" required /></label>
@@ -24,7 +25,7 @@
                 <label id="phone-label" for="phone">Phone: <input id="phone" type="number" name="phone"
                         placeholder="1230000000" required /></label>
             </fieldset>
-            <fieldset>
+            <fieldset id="gender">
                 <legend>Gender</legend>
                 <label id="male-label" for="male"> <input id="male" type="radio" name="gender" /> Male</label>
                 <label id="female-label" for="female"><input id="female" type="radio" name="gender" /> Female</label>
@@ -61,8 +62,7 @@
             </fieldset>
             <fieldset>
                 <legend>What are your hobbies?</legend>
-                <label id="sports-label" for="sports">
-                    <input id="hobbies" type="checkbox" name="sports"> Sports
+                <label id="sports-label" for="sports"><input id="hobbies" type="checkbox" name="sports"> Sports
                 </label>
                 <label id="gym-label" for="gym">
                     <input id="gym" type="checkbox" name="gym"> Gym
