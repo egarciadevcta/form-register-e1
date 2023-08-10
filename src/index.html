@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register Form</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Register Form</h1>
+        <p id="description">Next, please complete information.</p>
+    </header>
+    <Section>
+        <form id="data-form">
+            <fieldset>
+                <label id="fullname-label" for="fullname">FullName: <input id="fullname" type="text" name="fullname"
+                        placeholder="Peter Lee" required /></label>
+                <label id="email-label" for="email">Email: <input id="email" type="email" name="email"
+                        placeholder="peterlee@email.com" required /></label>
+                <label id="age-label" for="age">Age: <input id="age" type="number" name="age" min=18 max=120
+                        required /></label>
+                <label id="phone-label" for="phone">Phone: <input id="phone" type="number" name="phone"
+                        placeholder="1230000000" required /></label>
+            </fieldset>
+            <fieldset>
+                <legend>Gender</legend>
+                <label id="male-label" for="male"> <input id="male" type="radio" name="gender" /> Male</label>
+                <label id="female-label" for="female"><input id="female" type="radio" name="gender" /> Female</label>
+            </fieldset>
+            <fieldset>
+                <label id="experience-label" for="experience">
+                    How many years of work experience do you have?
+                    <select id="experience">
+                        <option value="">Select option</option>
+                        <option value=0>1 year</option>
+                        <option value=1>2-3 years</option>
+                        <option value=1>4-5 years</option>
+                        <option value=1>6+ years</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What are your hobbies?</legend>
+                <label id="sports-label" for="sports">
+                    <input id="hobbies" type="checkbox" name="sports"> Sports
+                </label>
+                <label id="gym-label" for="gym">
+                    <input id="gym" type="checkbox" name="gym"> Gym
+                </label>
+                <label id="cook-label" for="cook">
+                    <input id="cook" type="checkbox" name="cook"> Cook
+                </label>
+                <label id="music-label" for="music">
+                    <input id="music" type="checkbox" name="music"> Music
+                </label>
+                <label id="movies-label" for="movies">
+                    <input id="movies" type="checkbox" name="movies"> Movies
+                </label>
+                <label id="books-label" for="books">
+                    <input id="books" type="checkbox" name="books"> Reading Books
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Write a brief bio...</legend>
+                <textarea rows="8" cols="50" placeholder="I like to do..."></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </Section>
+    <footer>
+        <p>&copy; 2023 by egarcia. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
